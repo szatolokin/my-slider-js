@@ -17,5 +17,33 @@ html {
 /* slider */
 
 .slider {
+  /* overflow: hidden; */
+
+  border: 1px solid black;
+}
+
+.slider__wrapper {
+  display: flex;
+}
+
+.slider__slide {
+  margin-right: 25px;
+
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.slider__slide--active {
+  font-size: 35px;
   color: red;
+}
+@media (min-width: 1280px) {
+  .slider__slide {
+    margin-right: 45px;
+  
+    font-size: 35px;
+  }
+  .slider__slide--active {
+    font-size: 45px;
+  }
 }
